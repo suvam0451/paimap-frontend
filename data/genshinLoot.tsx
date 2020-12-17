@@ -1,5 +1,8 @@
 // Abbreviations (must be used in the data)
+import React from "react";
+
 export const ascensionMatCode = "asc";
+export const talentUpMatCode = "tnt";
 export const artifactCode = "art";
 
 // Artifact rarity
@@ -15,44 +18,54 @@ export const ascensionMatMeta = ["green", "blue", "purple", "orange"]
 // Weapon ascension material rarity
 export const weaponAscensionMeta = ["green", "blue", "purple", "orange"]
 
+// TIDY: Fragments used below
+const Filterable = {
+    filterable: true,
+    sortType: "basic",
+    Cell: (ele) => <div>{ele.value}</div>
+}
+const NonFilterable = {
+    filterable: false,
+    Cell: (ele) => <div>{ele.value}</div>
+}
+
 // The first two columns for boss runs is same
-export const BossMetaHeaders = {
+export const BaseMetaHeaders_01 = {
     Header: 'Data',
     columns: [
         {
             Header: 'Runs',
             accessor: 'col1',
-            filterable: true
-        }
-        , {
+            ...Filterable
+        }, {
             Header: 'WL',
             accessor: 'col2',
-            sortType: "basic",
-            filterable: false
+            ...Filterable
         },
     ]
 }
 
+
 // Dungeons have level barrier before being unlocked
-export const DungeonMetaHeaders = {
+export const BaseMetaHeaders_02 = {
     Header: 'Data',
     columns: [
         {
             Header: "Runs",
             accessor: "col1",
-            filterable: true
+            ...Filterable
         }, {
             Header: "DL",
             accessor: "col2",
-            filterable: true
+            ...NonFilterable
         }, {
             Header: "AR",
             accessor: "col3",
-            filterable: true
+            ...NonFilterable
         }, {
             Header: "WL",
             accessor: "col4",
-            filterable: true
+            ...Filterable
         }
     ]
 }

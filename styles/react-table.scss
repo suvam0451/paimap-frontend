@@ -23,6 +23,16 @@ table {
     border-bottom: 1px solid black;
     border-right: 1px solid black;
 
+    &[role=cell] {
+      padding: 0rem;
+
+      & div {
+        margin: 0.5rem;
+      }
+    }
+    //> div {
+    //  padding: 0.5rem;
+    //}
     :last-child {
       border-right: 0;
     }

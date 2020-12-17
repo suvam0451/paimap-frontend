@@ -6,7 +6,7 @@ type ITeyvatMapProps = {
     zoomLevel: number
 }
 
-export default function TeyvatMap({zoomLevel}: ITeyvatMapProps) {
+export default function InteractiveMap({zoomLevel}: ITeyvatMapProps) {
     const [zoomState, setZoomState] = useState(1)
     const [squareSize, setSquareSize] = useState(1024)
     const [isInit, setIsInit] = useState(true)
