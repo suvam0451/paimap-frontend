@@ -1,0 +1,27 @@
+// Assets for genshin are in a dedicated folder
+$asset_path: "../public/assets/genshin/";
+$ext: ".webp"; // Try to use same extension for files
+
+// AP: Asset Path
+$AP_artifacts: $asset_path + "artifacts/";
+$AP_ascension: $asset_path + "ascension/";
+$AP_bosses: $asset_path + "bosses/";
+$AP_talentUp: $asset_path + "talentUp/";
+
+// Artifacts
+$artifact_green: $AP_artifacts + "2Star" + $ext;
+$artifact_blue: $AP_artifacts + "3Star" + $ext;
+$artifact_purple: $AP_artifacts + "4Star" + $ext;
+$artifact_orange: $AP_artifacts + "5Star" + $ext;
+$artifact_red: $AP_artifacts + "5Star" + $ext;
+
+// Ascension Mats
+$ascension_green: $AP_ascension + "2Star" + $ext;
+$ascension_blue: $AP_ascension + "3Star" + $ext;
+$ascension_purple: $AP_ascension + "4Star" + $ext;
+$ascension_orange: $AP_ascension + "5Star" + $ext;
+
+// Talent-Up Mats
+$talentMat_copper: $AP_talentUp + "Copper" + $ext;
+$talentMat_silver: $AP_talentUp + "Silver" + $ext;
+$talentMat_gold: $AP_talentUp + "Gold" + $ext;

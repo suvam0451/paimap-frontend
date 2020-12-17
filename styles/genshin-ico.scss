@@ -1,0 +1,45 @@
+.ico {
+  height: 64px;
+  width: 64px;
+  background-size: 100% 100%;
+
+  &.artifact {
+    &.green {
+      background-image: url($artifact_green);
+    }
+    &.blue {
+      background-image: url($artifact_blue);
+    }
+    &.purple {
+      background-image: url($artifact_purple);
+    }
+    &.orange {
+      background-image: url($artifact_orange);
+    }
+  }
+  &.talentUp {
+    &.copper {
+      background-image: url($talentMat_copper);
+    }
+    &.silver {
+      background-image: url($talentMat_silver);
+    }
+    &.gold {
+      background-image: url($talentMat_gold);
+    }
+  }
+  &.ascension {
+    &.green {
+      background-image: url($ascension_green);
+    }
+    &.blue {
+      background-image: url($ascension_blue);
+    }
+    &.purple {
+      background-image: url($ascension_purple);
+    }
+    &.orange {
+      background-image: url($ascension_orange);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.map_container_01 {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+
+  .elem {
+    border-color: aqua;
+    border-width: 2px;
+  }
+}
+.map_container_02 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+
+  .elem {
+    border-color: aqua;
+    border-width: 2px;
+  }
+}
+
+.map_container_03 {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+
+  .elem {
+    border-color: aqua;
+    border-width: 2px;
+  }
+}

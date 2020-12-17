@@ -1,0 +1,18 @@
+div.artifact {
+  &.green {
+    background-color: lightgreen;
+  }
+  &.blue {
+    background-color: lightblue;
+  }
+  &.purple {
+    background-color: mediumpurple;
+  }
+  &.orange {
+    background-color: orange;
+  }
+  &.red {
+    background-color: indianred;
+  }
+}
+
