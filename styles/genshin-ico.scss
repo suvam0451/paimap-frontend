@@ -3,6 +3,15 @@
   width: 64px;
   background-size: 100% 100%;
 
+  &.small {
+    height: 48px;
+    width: 48px;
+  }
+  &.tiny {
+    height: 32px;
+    width: 32px;
+  }
+
   &.artifact {
     &.green {
       background-image: url($artifact_green);
@@ -41,5 +50,15 @@
     &.orange {
       background-image: url($ascension_orange);
     }
+  }
+
+  &.boss_1001 {
+    background-image: url($boss_1001);
+  }
+  &.boss_1002 {
+    background-image: url($boss_1002);
+  }
+  &.boss_1004 {
+    background-image: url($boss_1004)
   }
 }

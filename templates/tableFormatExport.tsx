@@ -13,7 +13,8 @@ export type IGenshinTableProvider = {
     columns: any
     data: any,
     name: string,
-    id: number
+    id: number,
+    iconCSS: string
 }
 
 function WorldBossColumnTemplate(artifact_tmpl: any, ascension_tmpl: any) {
@@ -42,29 +43,29 @@ function ArtifactDungeonColumnTemplate() {
 
 const WORLD_BOSS_DROP_TABLE_SCHEMA = [...WorldBossColumnTemplate(artifactColumnGen_01, ascensionColumnGen)]
 
-function GenerateBundle(columns: any, data: any, name: string, id: number): IGenshinTableProvider {
-    return {columns: columns, data: data, name: name, id: id}
+function GenerateBundle(columns: any, data: any, name: string, id: number, iconCSS: string): IGenshinTableProvider {
+    return {columns: columns, data: data, name: name, id: id, iconCSS: iconCSS}
 }
 
 // ---------------------------------------------------
 // const COLUMNS_PYRO_REGISVINE = [...WorldBossColumnTemplate(artifactColumnGen_01, ascensionColumnGen)]
 export const TMPL_PYRO_REGISVINE = GenerateBundle(WORLD_BOSS_DROP_TABLE_SCHEMA, PYRO_REGISVINE_DATA,
-    "Pyro Regisvine", 1001)
+    "Pyro Regisvine", 1001, "boss_1001")
 
 export const TMPL_CRYO_REGISVINE = GenerateBundle(WORLD_BOSS_DROP_TABLE_SCHEMA, CRYO_REGISVINE,
-    "Cryo Regisvine", 1002)
+    "Cryo Regisvine", 1002, "boss_1002")
 
 // --------------------------------------------------
 const COLUMNS_ANEMO_HYPOSTASIS = [...WorldBossColumnTemplate(artifactColumnGen_01, ascensionColumnGen)]
 export const TMPL_ANEMO_HYPOSTASIS = GenerateBundle(COLUMNS_ANEMO_HYPOSTASIS, ANEMO_HYPOSTASIS,
-    "Anemo Hypostasis", 1004)
+    "Anemo Hypostasis", 1004, "boss_1004")
 
 // ---------------------------------------------------
 const COLUMNS_FORSAKEN_RIFT = [...TalentDungeonColumnTemplate()]
 export const TMPL_FORSAKEN_RIFT = GenerateBundle(COLUMNS_FORSAKEN_RIFT, FORSAKEN_RIFT_DATA,
-    "Forsaken Rift", 4001)
+    "Forsaken Rift", 4001, "dungeon_4001")
 
 // --------------------------------------------------
 const COLUMNS_VALLEY_OF_REMEMBRANCE = [...ArtifactDungeonColumnTemplate()]
 export const TMPL_VALLEY_OF_REMEMBRANCE = GenerateBundle(COLUMNS_VALLEY_OF_REMEMBRANCE, VALLEY_OF_REMEMBRANCE,
-    "Valley of Rememberance", 2003)
+    "Valley of Rememberance", 2003, "dungeon_2003")

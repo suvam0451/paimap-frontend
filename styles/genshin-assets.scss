@@ -2,6 +2,10 @@
 $asset_path: "../public/assets/genshin/";
 $ext: ".webp"; // Try to use same extension for files
 
+@function new_boss($filename) {
+  @return  $AP_bosses + $filename + $ext;
+}
+
 // AP: Asset Path
 $AP_artifacts: $asset_path + "artifacts/";
 $AP_ascension: $asset_path + "ascension/";
@@ -25,3 +29,10 @@ $ascension_orange: $AP_ascension + "5Star" + $ext;
 $talentMat_copper: $AP_talentUp + "Copper" + $ext;
 $talentMat_silver: $AP_talentUp + "Silver" + $ext;
 $talentMat_gold: $AP_talentUp + "Gold" + $ext;
+
+// Elite Bosses
+$boss_1001: new_boss("Pyro_Regisvine");
+$boss_1002: new_boss("Cryo_Regisvine");
+$boss_1003: new_boss("Oceanid");
+$boss_1004: new_boss("Geo_Hypostasis");
+$boss_1005: new_boss("Electro_Hypostatis");

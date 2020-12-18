@@ -142,7 +142,7 @@ export const CRYO_REGISVINE = [
         asc3: 0.000,
         asc4: 0.000,
         asc5: 1.750
-    },{
+    }, {
         col1: 19,
         col2: 4,
         art1: 0.000,
@@ -190,6 +190,18 @@ export const CRYO_REGISVINE = [
         asc3: 0.170,
         asc4: 0.000,
         asc5: 2.670
+    }, {
+        col1: 0,
+        col2: 8,
+        art1: 0.000,
+        art2: 0.000,
+        art3: 0.000,
+        art4: 0.000,
+        asc1: 0.000,
+        asc2: 0.000,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 0.000
     },
 ]
 

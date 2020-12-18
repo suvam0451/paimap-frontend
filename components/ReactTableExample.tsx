@@ -11,15 +11,22 @@ import {
 import {set_dropratePrefs, get_dropratePrefs} from "../interface/localStorage"
 import {CircularNavMap, INavMap} from "../utility/algorithms"
 
-type ITableDecorator =
-    IGenshinTableProvider
-    & {
+type ITableDecorator = IGenshinTableProvider & {
+    modifiedData: any
     title: string, worldLevelConfig: boolean[], navigationMap: Map<number, INavMap<number>>,
     NavigationID: number,
     setNavigationID: React.Dispatch<React.SetStateAction<number>>
 }
 
-function TableGenerator({columns, data, title, navigationMap, NavigationID, setNavigationID}: ITableDecorator) {
+function TableGenerator({
+                            columns,
+                            data,
+                            iconCSS,
+                            title,
+                            navigationMap,
+                            NavigationID,
+                            setNavigationID
+                        }: ITableDecorator) {
     const {
         getTableProps,
         getTableBodyProps,
@@ -39,39 +46,48 @@ function TableGenerator({columns, data, title, navigationMap, NavigationID, setN
     }
 
     return <>
-        <span className={"inline"}>
+        <div className={"droprate_container"}>
+            <div className={"header"}>
+                        <span className={"inline"}>
             <button className={"crit prevbutton"} onClick={navigatePrev}/>
-            <h1 className={"mid"}>{title}</h1>
+            <div className={"mid"}>
+                <div className={`ico small ${iconCSS}`}/>
+                <h1 className={"mid"}>{title}</h1>
+            </div>
             <button className={"crit nextbutton"} onClick={navigateNext}/>
         </span>
-        <table {...getTableProps()} >
-            <thead>
-            {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}> {
-                    headerGroup.headers.map((column, i) => (
-                        <th {...column.getHeaderProps()} key={i}>
-                            {column.render('Header')}
-                        </th>
-                    ))
-                }
-                </tr>
-            ))}
-            </thead>
-            {/* Table body */}
-            <tbody {...getTableBodyProps()}> {
-                rows.map(row => {
-                    prepareRow(row)
-                    return (
-                        <tr {...row.getRowProps}> {
-                            row.cells.map((cell, i) => {
-                                return (<td {...cell.getCellProps()} key={i}>{cell.render('Cell')}</td>)
-                            })
+            </div>
+            <div className={"content"}>
+                <table {...getTableProps()} >
+                    <thead>
+                    {headerGroups.map(headerGroup => (
+                        <tr {...headerGroup.getHeaderGroupProps()}> {
+                            headerGroup.headers.map((column, i) => (
+                                <th {...column.getHeaderProps()} key={i}>
+                                    {column.render('Header')}
+                                </th>
+                            ))
                         }
                         </tr>
-                    )
-                })}
-            </tbody>
-        </table>
+                    ))}
+                    </thead>
+                    {/* Table body */}
+                    <tbody {...getTableBodyProps()}> {
+                        rows.map(row => {
+                            prepareRow(row)
+                            return (
+                                <tr {...row.getRowProps}> {
+                                    row.cells.map((cell, i) => {
+                                        return (<td {...cell.getCellProps()} key={i}>{cell.render('Cell')}</td>)
+                                    })
+                                }
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </>
 }
 
@@ -157,6 +173,8 @@ export default function DroprateTableView() {
         <WorldLevelController settings={worldLevelSelection} updateSettings={setWorldLevelSelection}
                               updateChanged={setChanged}/>
         <TableGenerator columns={currentDataHandle.columns} data={data_handle}
+                        modifiedData={data_handle}
+                        iconCSS={currentDataHandle.iconCSS}
                         title={currentDataHandle.name}
                         worldLevelConfig={worldLevelSelection} navigationMap={navMap} setNavigationID={setTableIndex}
                         NavigationID={tableIndex} name={currentDataHandle.name} id={currentDataHandle.id}/>
