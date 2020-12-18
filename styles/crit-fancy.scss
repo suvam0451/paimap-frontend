@@ -1,0 +1,26 @@
+.crit.prevbutton {
+  all: unset;
+  &::after {
+    content: "⬅️";
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
+  }
+}
+.mid {
+  margin: auto;
+}
+
+.crit.nextbutton {
+  all: unset;
+  &::after {
+    content: "➡️";
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
+  }
+}
+
+.inline {
+  display: flex;
+}

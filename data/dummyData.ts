@@ -105,6 +105,106 @@ export const PYRO_REGISVINE_DATA = [
     }
 ]
 
+export const ANEMO_HYPOSTASIS = [
+    {
+        col1: 0,
+        col2: 1,
+        art1: 0.000,
+        art2: 0.000,
+        art3: 0.000,
+        art4: 0.000,
+        asc1: 0.000,
+        asc2: 0.000,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 0.000
+    }, {
+        col1: 5,
+        col2: 2,
+        art1: 0.000,
+        art2: 3.000,
+        art3: 0.000,
+        art4: 0.000,
+        asc1: 0.600,
+        asc2: 1.000,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 1.200
+    }, {
+        col1: 9,
+        col2: 3,
+        art1: 0.000,
+        art2: 3.778,
+        art3: 0.333,
+        art4: 0.000,
+        asc1: 1.444,
+        asc2: 1.111,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 2.000
+    }, {
+        col1: 27,
+        col2: 4,
+        art1: 0.000,
+        art2: 3.333,
+        art3: 0.889,
+        art4: 0.000,
+        asc1: 1.407,
+        asc2: 1.444,
+        asc3: 0.074,
+        asc4: 0.000,
+        asc5: 1.963
+    }, {
+        col1: 111,
+        col2: 5,
+        art1: 0.000,
+        art2: 2.901,
+        art3: 1.000,
+        art4: 0.198,
+        asc1: 1.739,
+        asc2: 1.441,
+        asc3: 0.135,
+        asc4: 0.000,
+        asc5: 2.207
+    }, {
+        col1: 82,
+        col2: 6,
+        art1: 0.000,
+        art2: 2.524,
+        art3: 1.244,
+        art4: 0.439,
+        asc1: 1.854,
+        asc2: 1.561,
+        asc3: 0.134,
+        asc4: 0.000,
+        asc5: 2.378
+    }, {
+        col1: 53,
+        col2: 7,
+        art1: 0.000,
+        art2: 2.094,
+        art3: 1.396,
+        art4: 0.698,
+        asc1: 2.245,
+        asc2: 1.585,
+        asc3: 0.057,
+        asc4: 0.038,
+        asc5: 2.566
+    }, {
+        col1: 0,
+        col2: 8,
+        art1: 0.000,
+        art2: 0.000,
+        art3: 0.000,
+        art4: 0.000,
+        asc1: 0.000,
+        asc2: 0.000,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 0.000
+    },
+]
+
 export const DOMAIN_OF_GUYUN_DATA = [
     {
         col1: 3,    // Runs
