@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13deccbd-7ba0-4719-8fe6-76e354ca3a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/crit-fancy.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/algorithms.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ReactTableExample.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReactTableExample.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/dummyData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/dummyData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/export.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/export.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/tableFormatExport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tableFormatExport.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
       <workItem from="1608200881894" duration="396000" />
       <workItem from="1608201291875" duration="7287000" />
       <workItem from="1608214506810" duration="25653000" />
-      <workItem from="1608294511142" duration="8552000" />
+      <workItem from="1608294511142" duration="10967000" />
     </task>
     <servers />
   </component>

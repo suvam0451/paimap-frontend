@@ -2,8 +2,9 @@ import React, {useEffect, useMemo, useState} from 'react'
 import {useTable, useSortBy} from "react-table"
 import {
     TMPL_PYRO_REGISVINE,
-    TMPL_FORSAKEN_RIFT,
-    TMPL_VALLEY_OF_REMEMBRANCE,
+    TMPL_CRYO_REGISVINE,
+    // TMPL_FORSAKEN_RIFT,
+    // TMPL_VALLEY_OF_REMEMBRANCE,
     TMPL_ANEMO_HYPOSTASIS,
     IGenshinTableProvider
 } from "../templates/tableFormatExport"
@@ -28,12 +29,12 @@ function TableGenerator({columns, data, title, navigationMap, NavigationID, setN
     } = useTable({columns, data}, useSortBy)
 
     function navigateNext() {
-        console.log("Click Click Boom")
+        console.log("Next ID: ", navigationMap.get(NavigationID)!.next)
         setNavigationID(navigationMap.get(NavigationID)!.next)
     }
 
     function navigatePrev() {
-        console.log("Click Click Boomshaka")
+        console.log("Next ID: ", navigationMap.get(NavigationID)!.prev)
         setNavigationID(navigationMap.get(NavigationID)!.prev)
     }
 
@@ -96,55 +97,31 @@ function WorldLevelController({settings, updateSettings, updateChanged}: IWorldL
     </>
 }
 
-type ITableHandle = {
-    columns: any,
-    data: any[],
-    title: string,
-    index?: number
-}
-export default function TeyvatMap() {
+// type ITableHandle = {
+//     columns: any,
+//     data: any[],
+//     title: string,
+//     index?: number
+// }
+
+export default function DroprateTableView() {
     // Switches to represent if the user has made choice to show the world levels
-    const [worldLevelSelection, setWorldLevelSelection] = useState([true, true, true, true, true, true, true, true])
-    const [displayIndex, setDisplayIndex] = useState(0)
+    const [worldLevelSelection, setWorldLevelSelection] = useState(Array(8).fill(true))
+    const [displayIndex, setDisplayIndex] = useState(1001)
     // When website fires, loads state data from localStorage
     const [firstRun, setFirstRun] = useState(true)
     // Acts as a notifier for when the boolean array representing selected world levels changes
     const [changed, setChanged] = useState(false)
     // Represents the ID of drop-rate table
-    const [tableIndex, setTableIndex] = useState(0)
+    const [tableIndex, setTableIndex] = useState(1001)
 
-    const mp: Map<number, ITableHandle> = new Map()
-    mp.set(0, {
-        columns: TMPL_PYRO_REGISVINE.columns,
-        data: TMPL_PYRO_REGISVINE.data,
-        title: "Pyro Regisvine",
-        index: 1001
-    })
-    mp.set(1, {
-        columns: TMPL_FORSAKEN_RIFT.columns,
-        data: TMPL_FORSAKEN_RIFT.data,
-        title: "Forsaken Rift",
-        index: 1002
-    })
-    mp.set(2, {
-        columns: TMPL_VALLEY_OF_REMEMBRANCE.columns,
-        data: TMPL_VALLEY_OF_REMEMBRANCE.data,
-        title: "Valley Of Remembrance",
-        index: 1003
-    })
-    mp.set(3, {
-        columns: TMPL_ANEMO_HYPOSTASIS.columns,
-        data: TMPL_ANEMO_HYPOSTASIS.data,
-        title: "Anemo Hypostasis",
-        index: 1004
-    })
+    const mp: Map<number, IGenshinTableProvider> = new Map()
+    mp.set(1001, TMPL_PYRO_REGISVINE)
+    mp.set(1002, TMPL_CRYO_REGISVINE)
+    mp.set(1004, TMPL_ANEMO_HYPOSTASIS)
 
-    const navMap = CircularNavMap([0, 1, 2, 3]);
-
-    // const navMap: Map<number, {prev: number, next: number}> = new Map()
-    // navMap.set(0, {next: 1, prev: 2})
-    // navMap.set(1, {next: 2, prev: 0})
-    // navMap.set(2, {next: 0, prev: 1})
+    // Make sure that all keys are satisfied in the map above
+    const navMap = CircularNavMap([1001, 1002, 1004]);
 
     // This ref will fetch the id specific data, whenever the displayed table ID changes
     const currentDataHandle: any = useMemo(() => {
@@ -152,7 +129,7 @@ export default function TeyvatMap() {
         if (testRef != null) {
             return testRef
         }
-        return mp.get(0)
+        return mp.get(1001)
     }, [worldLevelSelection, tableIndex])
 
     useEffect(() => {
@@ -180,8 +157,8 @@ export default function TeyvatMap() {
         <WorldLevelController settings={worldLevelSelection} updateSettings={setWorldLevelSelection}
                               updateChanged={setChanged}/>
         <TableGenerator columns={currentDataHandle.columns} data={data_handle}
-                        title={currentDataHandle.title}
+                        title={currentDataHandle.name}
                         worldLevelConfig={worldLevelSelection} navigationMap={navMap} setNavigationID={setTableIndex}
-                        NavigationID={tableIndex}/>
+                        NavigationID={tableIndex} name={currentDataHandle.name} id={currentDataHandle.id}/>
     </>
 }

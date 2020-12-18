@@ -105,6 +105,94 @@ export const PYRO_REGISVINE_DATA = [
     }
 ]
 
+export const CRYO_REGISVINE = [
+    {
+        col1: 0,
+        col2: 1,
+        art1: 0.000,
+        art2: 0.000,
+        art3: 0.000,
+        art4: 0.000,
+        asc1: 0.000,
+        asc2: 0.000,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 0.000
+    }, {
+        col1: 6,
+        col2: 2,
+        art1: 0.000,
+        art2: 2.670,
+        art3: 0.500,
+        art4: 0.000,
+        asc1: 1.170,
+        asc2: 1.670,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 1.500
+    }, {
+        col1: 12,
+        col2: 3,
+        art1: 0.000,
+        art2: 3.670,
+        art3: 0.500,
+        art4: 0.000,
+        asc1: 1.330,
+        asc2: 1.420,
+        asc3: 0.000,
+        asc4: 0.000,
+        asc5: 1.750
+    },{
+        col1: 19,
+        col2: 4,
+        art1: 0.000,
+        art2: 3.370,
+        art3: 0.890,
+        art4: 0.050,
+        asc1: 1.370,
+        asc2: 1.530,
+        asc3: 0.260,
+        asc4: 0.000,
+        asc5: 2.050
+    }, {
+        col1: 96,
+        col2: 5,
+        art1: 0.000,
+        art2: 2.890,
+        art3: 1.060,
+        art4: 0.220,
+        asc1: 1.780,
+        asc2: 1.360,
+        asc3: 0.090,
+        asc4: 0.000,
+        asc5: 2.200
+    }, {
+        col1: 103,
+        col2: 6,
+        art1: 0.000,
+        art2: 2.580,
+        art3: 1.210,
+        art4: 0.470,
+        asc1: 1.750,
+        asc2: 1.670,
+        asc3: 0.140,
+        asc4: 0.020,
+        asc5: 2.320
+    }, {
+        col1: 12,
+        col2: 7,
+        art1: 0.000,
+        art2: 2.170,
+        art3: 1.500,
+        art4: 0.580,
+        asc1: 2.000,
+        asc2: 1.750,
+        asc3: 0.170,
+        asc4: 0.000,
+        asc5: 2.670
+    },
+]
+
 export const ANEMO_HYPOSTASIS = [
     {
         col1: 0,
