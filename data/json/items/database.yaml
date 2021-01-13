@@ -1,11 +1,11 @@
-{
-  "1000000": {
-    "name": "Adventurer's Experience"
-  },
-  "1000001": {
-    "name": "Hero's Wit"
-  },
-  "1000002": {
-    "name": "Wanderer's Advice"
-  }
-}
+# Character EXP Items
+100:
+  - "Adventurer's Experience"
+  - "Hero's Wit"
+  - "Wanderer's Advice"
+101:
+  - Agent's Sacrificial Knife
+  - Agnidus Agate Chunk
+  - Agnidus Agate Fragment
+  - Agnidus Agate Gemstone
+  - Agnidus Agate Sliver

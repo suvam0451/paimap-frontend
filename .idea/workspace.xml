@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13deccbd-7ba0-4719-8fe6-76e354ca3a0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/json/droprate_data_bosses.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_bosses.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/genshindata-artifacts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/genshindata-bosses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/src/artifact_domains.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/src/elite_bosses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/src/weekly_bosses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sys" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ReactTableExample.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReactTableExample.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dummyData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/dummyData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/character_ascensions/QiQi.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/character_ascensions/QiQi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/items/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/items/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/items/database.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/items/database.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/localStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interface/localStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tableFormatExport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tableFormatExport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,32 +44,40 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scrapers" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scrapers" />
+      <recent name="$PROJECT_DIR$/data/json/items" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scrapers/src" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.run">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="node" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Node.js.Unnamed" />
-      <item itemvalue="npm.run" />
+      <item itemvalue="npm.dev" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,7 +95,9 @@
       <workItem from="1608201291875" duration="7287000" />
       <workItem from="1608214506810" duration="25653000" />
       <workItem from="1608294511142" duration="13273000" />
-      <workItem from="1609667471036" duration="825000" />
+      <workItem from="1609667471036" duration="4224000" />
+      <workItem from="1609933980786" duration="19000" />
+      <workItem from="1610543069786" duration="8819000" />
     </task>
     <servers />
   </component>

@@ -6,23 +6,26 @@ import {
     // TMPL_FORSAKEN_RIFT,
     // TMPL_VALLEY_OF_REMEMBRANCE,
     TMPL_ANEMO_HYPOSTASIS,
+    TMPL_OCEANID,
+    TMPL_ELECTRO_REGISVINE,
+    TMPL_GEO_REGISVINE,
     IGenshinTableProvider
 } from "../templates/tableFormatExport"
-import {set_dropratePrefs, get_dropratePrefs} from "../interface/localStorage"
+import * as localStorage from "../interface/localStorage"
 import {CircularNavMap, INavMap} from "../utility/algorithms"
 
 type ITableDecorator = IGenshinTableProvider & {
-    modifiedData: any
-    title: string, worldLevelConfig: boolean[], navigationMap: Map<number, INavMap<number>>,
+    modifiedData: any,
+    worldLevelConfig: boolean[], navigationMap: Map<number, INavMap<number>>,
     NavigationID: number,
     setNavigationID: React.Dispatch<React.SetStateAction<number>>
+    data: any
 }
 
 function TableGenerator({
                             columns,
                             data,
-                            iconCSS,
-                            title,
+                            fragment,
                             navigationMap,
                             NavigationID,
                             setNavigationID
@@ -51,8 +54,8 @@ function TableGenerator({
                         <span className={"inline"}>
             <button className={"crit prevbutton"} onClick={navigatePrev}/>
             <div className={"mid"}>
-                <div className={`ico small ${iconCSS}`}/>
-                <h1 className={"mid"}>{title}</h1>
+                <div className={`ico small ${fragment.icon}`}/>
+                <h1 className={"mid"}>{fragment.name}</h1>
             </div>
             <button className={"crit nextbutton"} onClick={navigateNext}/>
         </span>
@@ -113,13 +116,6 @@ function WorldLevelController({settings, updateSettings, updateChanged}: IWorldL
     </>
 }
 
-// type ITableHandle = {
-//     columns: any,
-//     data: any[],
-//     title: string,
-//     index?: number
-// }
-
 export default function DroprateTableView() {
     // Switches to represent if the user has made choice to show the world levels
     const [worldLevelSelection, setWorldLevelSelection] = useState(Array(8).fill(true))
@@ -131,36 +127,37 @@ export default function DroprateTableView() {
     // Represents the ID of drop-rate table
     const [tableIndex, setTableIndex] = useState(1001)
 
+    useEffect(() => {
+        if (firstRun) {
+            let prefs = localStorage.get_dropratePrefs()
+            setDisplayIndex(prefs.activeWindowIndex)
+            setFirstRun(false)
+        }
+        localStorage.set_dropratePrefs({activeWindowIndex: displayIndex, ARSelection: worldLevelSelection})
+    }, [])
+
+
     const mp: Map<number, IGenshinTableProvider> = new Map()
     mp.set(1001, TMPL_PYRO_REGISVINE)
     mp.set(1002, TMPL_CRYO_REGISVINE)
+    mp.set(1003, TMPL_OCEANID)
     mp.set(1004, TMPL_ANEMO_HYPOSTASIS)
+    mp.set(1005, TMPL_ELECTRO_REGISVINE)
+    mp.set(1006, TMPL_GEO_REGISVINE)
 
     // Make sure that all keys are satisfied in the map above
-    const navMap = CircularNavMap([1001, 1002, 1004]);
+    const navMap = CircularNavMap([1001, 1002, 1003, 1004, 1005, 1006]);
 
     // This ref will fetch the id specific data, whenever the displayed table ID changes
-    const currentDataHandle: any = useMemo(() => {
-        let testRef = mp.get(tableIndex);
-        if (testRef != null) {
-            return testRef
-        }
-        return mp.get(1001)
-    }, [worldLevelSelection, tableIndex])
+    const currentDataHandle: IGenshinTableProvider | undefined = useMemo(() =>
+            mp.has(tableIndex) ? mp.get(tableIndex) : mp.get(1001)
+        , [worldLevelSelection, tableIndex])
 
-    useEffect(() => {
-        if (firstRun) {
-            let prefs = get_dropratePrefs()
-            setDisplayIndex(prefs.activeWindow)
-            setFirstRun(false)
-        }
-        set_dropratePrefs({activeWindow: displayIndex, AR: worldLevelSelection})
-    }, [])
 
-    /* Data handle needs to change whenever user checks/unchecks WL (World LEvel) buttons*/
+    /* Data handle needs to change whenever user checks/unchecks WL (World Level) controls */
     const data_handle = useMemo(() => {
         let data: any[] = []
-        let dataRef = currentDataHandle.data
+        let dataRef = currentDataHandle?.data
         for (let i = 0; i < worldLevelSelection.length; i++) {
             if (worldLevelSelection[i] && dataRef[i] != null)
                 data.push(dataRef[i])
@@ -172,11 +169,10 @@ export default function DroprateTableView() {
     return <>
         <WorldLevelController settings={worldLevelSelection} updateSettings={setWorldLevelSelection}
                               updateChanged={setChanged}/>
-        <TableGenerator columns={currentDataHandle.columns} data={data_handle}
+        <TableGenerator columns={currentDataHandle?.columns} data={data_handle}
+                        fragment={currentDataHandle!.fragment}
                         modifiedData={data_handle}
-                        iconCSS={currentDataHandle.iconCSS}
-                        title={currentDataHandle.name}
                         worldLevelConfig={worldLevelSelection} navigationMap={navMap} setNavigationID={setTableIndex}
-                        NavigationID={tableIndex} name={currentDataHandle.name} id={currentDataHandle.id}/>
+                        NavigationID={tableIndex}/>
     </>
 }
