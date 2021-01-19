@@ -1,0 +1,245 @@
+[
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Albedo_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201217053650",
+    "img_alt": "Character_Albedo_Thumb.png",
+    "name": "Albedo",
+    "rarity": "5",
+    "element": "Geo",
+    "weapon": "Sword",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150352",
+    "img_alt": "Character_Amber_Thumb.png",
+    "name": "Amber",
+    "rarity": "4",
+    "element": "Pyro",
+    "weapon": "Bow",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Character_Barbara_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150346",
+    "img_alt": "Character_Barbara_Thumb.png",
+    "name": "Barbara",
+    "rarity": "4",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Beidou_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150340",
+    "img_alt": "Character_Beidou_Thumb.png",
+    "name": "Beidou",
+    "rarity": "4",
+    "element": "Electro",
+    "weapon": "Claymore",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150335",
+    "img_alt": "Character_Bennett_Thumb.png",
+    "name": "Bennett",
+    "rarity": "4",
+    "element": "Pyro",
+    "weapon": "Sword",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/Character_Chongyun_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150317",
+    "img_alt": "Character_Chongyun_Thumb.png",
+    "name": "Chongyun",
+    "rarity": "4",
+    "element": "Cryo",
+    "weapon": "Claymore",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Diluc_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150303",
+    "img_alt": "Character_Diluc_Thumb.png",
+    "name": "Diluc",
+    "rarity": "5",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Diona_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150258",
+    "img_alt": "Character_Diona_Thumb.png",
+    "name": "Diona",
+    "rarity": "4",
+    "element": "Cryo",
+    "weapon": "Bow",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/Character_Fischl_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150308",
+    "img_alt": "Character_Fischl_Thumb.png",
+    "name": "Fischl",
+    "rarity": "4",
+    "element": "Electro",
+    "weapon": "Bow",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150252",
+    "img_alt": "Character_Jean_Thumb.png",
+    "name": "Jean",
+    "rarity": "5",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/Character_Kaeya_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150221",
+    "img_alt": "Character_Kaeya_Thumb.png",
+    "name": "Kaeya",
+    "rarity": "4",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150215",
+    "img_alt": "Character_Keqing_Thumb.png",
+    "name": "Keqing",
+    "rarity": "5",
+    "element": "Electro",
+    "weapon": "Sword",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Klee_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150211",
+    "img_alt": "Character_Klee_Thumb.png",
+    "name": "Klee",
+    "rarity": "5",
+    "element": "Pyro",
+    "weapon": "Catalyst",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Lisa_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150206",
+    "img_alt": "Character_Lisa_Thumb.png",
+    "name": "Lisa",
+    "rarity": "4",
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150200",
+    "img_alt": "Character_Mona_Thumb.png",
+    "name": "Mona",
+    "rarity": "5",
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Character_Ningguang_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150133",
+    "img_alt": "Character_Ningguang_Thumb.png",
+    "name": "Ningguang",
+    "rarity": "4",
+    "element": "Geo",
+    "weapon": "Catalyst",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Noelle_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150127",
+    "img_alt": "Character_Noelle_Thumb.png",
+    "name": "Noelle",
+    "rarity": "4",
+    "element": "Geo",
+    "weapon": "Claymore",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Qiqi_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150121",
+    "img_alt": "Character_Qiqi_Thumb.png",
+    "name": "Qiqi",
+    "rarity": "5",
+    "element": "Cryo",
+    "weapon": "Sword",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/Character_Razor_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150040",
+    "img_alt": "Character_Razor_Thumb.png",
+    "name": "Razor",
+    "rarity": "4",
+    "element": "Electro",
+    "weapon": "Claymore",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Sucrose_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150116",
+    "img_alt": "Character_Sucrose_Thumb.png",
+    "name": "Sucrose",
+    "rarity": "4",
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118145931",
+    "img_alt": "Character_Tartaglia_Thumb.png",
+    "name": "Tartaglia",
+    "rarity": "5",
+    "element": "Hydro",
+    "weapon": "Bow",
+    "nation": "Snezhnaya"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201125074010",
+    "img_alt": "Character_Traveler_Thumb.png",
+    "name": "Traveler",
+    "rarity": "5",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118150028",
+    "img_alt": "Character_Venti_Thumb.png",
+    "name": "Venti",
+    "rarity": "5",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "nation": "Mondstadt"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Xiangling_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118145949",
+    "img_alt": "Character_Xiangling_Thumb.png",
+    "name": "Xiangling",
+    "rarity": "4",
+    "element": "Pyro",
+    "weapon": "Polearm",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201118145941",
+    "img_alt": "Character_Xingqiu_Thumb.png",
+    "name": "Xingqiu",
+    "rarity": "4",
+    "element": "Hydro",
+    "weapon": "Sword",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Character_Xinyan_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201129065150",
+    "img_alt": "Character_Xinyan_Thumb.png",
+    "name": "Xinyan",
+    "rarity": "4",
+    "element": "Pyro",
+    "weapon": "Claymore",
+    "nation": "Liyue"
+  },
+  {
+    "img_src": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Character_Zhongli_Thumb.png/revision/latest/scale-to-width-down/50?cb=20201129065141",
+    "img_alt": "Character_Zhongli_Thumb.png",
+    "name": "Zhongli",
+    "rarity": "5",
+    "element": "Geo",
+    "weapon": "Polearm",
+    "nation": "Liyue"
+  }
+]

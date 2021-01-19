@@ -1,0 +1,1 @@
+https://genshin.gg/weapons

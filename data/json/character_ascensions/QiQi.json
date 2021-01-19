@@ -1,0 +1,39 @@
+{
+  "Phases": [
+    {
+      "id": 1,
+      "required_level": 20,
+      "mora_cost": 20000,
+      "materials": [
+        {
+          "amount": 1,
+          "item_id": 101
+        },
+        {
+          "amount": 0,
+          "item_id": 101
+        },
+        {
+          "name": "Shivada Jade Fragment",
+          "amount": 3,
+          "item_id": 101
+        },
+        {
+          "name": "Shivada Jade Fragment",
+          "amount": 6,
+          "item_id": 101
+        },
+        {
+          "name": "Shivada Jade Chunk",
+          "amount": 6,
+          "item_id": 101
+        },
+        {
+          "name": "Shivada Jade Gemstone",
+          "amount": 6,
+          "item_id": 101
+        }
+      ]
+    }
+  ]
+}
