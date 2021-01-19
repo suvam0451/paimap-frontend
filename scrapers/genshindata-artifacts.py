@@ -40,6 +40,11 @@ def parseLines(lines, start=0, end=8) -> (list, list):
     return obja, objb
 
 
+start = 0
+end = -1
+for line in lines:
+    if line
+
 return_obj = [None] * 6
 
 # Strips the newline character
