@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13deccbd-7ba0-4719-8fe6-76e354ca3a0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/fileUpload.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/fileUploader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/admin.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapers/genshindata-artifacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/genshindata-artifacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapers/src/weekly_bosses.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/src/weekly_bosses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1lhl4rNFciJGhTZpYZx1uiEJrCX" />
   <component name="ProjectLevelVcsManager">
@@ -28,9 +35,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scrapers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auth-tutorial" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -82,6 +90,10 @@
       <workItem from="1609667471036" duration="4224000" />
       <workItem from="1609933980786" duration="19000" />
       <workItem from="1610543069786" duration="10840000" />
+      <workItem from="1611235032644" duration="2979000" />
+      <workItem from="1611238027881" duration="1171000" />
+      <workItem from="1611240078920" duration="294000" />
+      <workItem from="1611240384962" duration="4698000" />
     </task>
     <servers />
   </component>
