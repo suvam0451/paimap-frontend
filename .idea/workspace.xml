@@ -2,12 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13deccbd-7ba0-4719-8fe6-76e354ca3a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/fileUpload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/fileUploader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/add.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/InteractiveMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/InteractiveMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ReactTableExample.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ReactTableExample.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dummyData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/dummyData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/genshinLoot.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/genshinLoot.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/genshinText.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/genshinText.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/character_ascensions/QiQi.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/character_ascensions/QiQi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/droprate_data_bosses.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/droprate_data_bosses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/items/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/items/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/json/items/database.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/json/items/database.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_bosses.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_bosses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/localStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interface/localStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/users/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/users/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/droprates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/droprates.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/map.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/memes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/memes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/users/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/users/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_01_001.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_01_001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_02_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_02_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_02_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_02_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_02_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_02_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_02_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_02_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_001.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_002.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_003.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_004.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_004.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_005.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_005.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_006.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_007.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_007.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_008.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_008.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_009.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_009.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_010.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_010.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_011.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_011.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_012.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_012.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_013.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_013.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_014.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_014.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_015.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_015.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Teyvat_03_016.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Teyvat_03_016.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/artifacts/2Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/artifacts/2Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/artifacts/3Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/artifacts/3Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/artifacts/4Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/artifacts/4Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/artifacts/5Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/artifacts/5Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/ascension/2Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/ascension/2Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/ascension/3Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/ascension/3Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/ascension/4Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/ascension/4Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/ascension/5Star.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/ascension/5Star.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Anemo_Hypostasis.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Anemo_Hypostasis.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Cryo_Regisvine.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Cryo_Regisvine.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Electro_Hypostasis.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Electro_Hypostasis.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Geo_Hypostasis.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Geo_Hypostasis.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Oceanid.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Oceanid.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/Pyro_Regisvine.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/Pyro_Regisvine.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/bosses/stormterror.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/bosses/stormterror.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/talentUp/Copper.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/talentUp/Copper.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/talentUp/Gold.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/talentUp/Gold.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/genshin/talentUp/Silver.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/genshin/talentUp/Silver.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/scrapers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/scrapers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/characters.json" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/characters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/fandom-swords.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/fandom-swords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/fandom-weapons-swords.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/fandom-weapons-swords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/fandom_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/fandom_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/game8-characterlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/game8-characterlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/genshindata-artifacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/genshindata-artifacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/genshindata-bosses.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/genshindata-bosses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/genshingg-characterlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/genshingg-characterlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/genshingg-weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/genshingg-weapons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/src/artifact_domains.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/src/artifact_domains.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/src/elite_bosses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/src/elite_bosses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/src/weekly_bosses.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/src/weekly_bosses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/weapons_swords.json" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/weapons_swords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/containers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/containers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/crit-fancy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/crit-fancy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/export.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/export.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/genshin-assets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/genshin-assets.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/genshin-ico.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/genshin-ico.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/genshin-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/genshin-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/images.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/images.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/mapgrid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/mapgrid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/react-table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/react-table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sys" beforeDir="false" afterPath="$PROJECT_DIR$/sys" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tableFormatExport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tableFormatExport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tableGenerators.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tableGenerators.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/algorithms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utility/algorithms.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sample-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sample-data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +146,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auth-tutorial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="discord-application" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="D:\Suvam\Repos\paimap-frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -94,6 +205,10 @@
       <workItem from="1611238027881" duration="1171000" />
       <workItem from="1611240078920" duration="294000" />
       <workItem from="1611240384962" duration="4698000" />
+      <workItem from="1611339787734" duration="155000" />
+      <workItem from="1611593569957" duration="1195000" />
+      <workItem from="1612001933883" duration="2460000" />
+      <workItem from="1612005222996" duration="691000" />
     </task>
     <servers />
   </component>
