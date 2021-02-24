@@ -3,6 +3,8 @@ import ErrorPage from 'next/error'
 import PostBody from '../../components/posts/PostBody'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
+import Layout from "../../components/Layout"
+import DocsContainer from "../../components/DocsContainer"
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -10,9 +12,11 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <>
-      <PostBody content={post.content} />
-    </>
+    <Layout>
+      <DocsContainer>
+        <PostBody content={post.content} />
+      </DocsContainer>
+    </Layout>
   )
 }
 

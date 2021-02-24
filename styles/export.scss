@@ -1,7 +1,10 @@
-@import "genshin-assets"; // Images for icons. Must come before "genshin-ico"
+@import "globals";          // tailwindcss 
+@import "genshin-assets";   // Images for icons. Must come before "genshin-ico"
 @import "genshin-style";
 @import "mapgrid";
 @import "containers";
 @import "react-table";
 @import "genshin-ico";
 @import "crit-fancy";
+@import "posts_container";
+@import "text-formatting";
