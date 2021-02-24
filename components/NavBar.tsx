@@ -1,32 +1,73 @@
 import React from 'react'
 import Link from 'next/link'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Nav from 'react-bootstrap/Nav'
+import Form from 'react-bootstrap/Form'
+import FormControl from 'react-bootstrap/FormControl'
+import Button from 'react-bootstrap/Button'
 
 type ILinkProps = {
-    to: string
-    text: string
+  to: string
+  text: string
 }
 
-const LinkElement = ({to, text}: ILinkProps) =>
-    <Link href={to}>
-        <a>{text}</a>
-    </Link>
+const LinkElement = ({ to, text }: ILinkProps) => (
+  <Link href={to}>
+    <a>{text}</a>
+  </Link>
+)
 
 export default function NavBar() {
-    return (<header>
-        <nav>
-            <LinkElement to={"/"} text={"Home"}/>
-            {' | '}
-            <LinkElement to={"/about"} text={"About"}/>
-            {' | '}
-            <LinkElement to={"/users"} text={"Users List"}/>
-            {' | '}
-            <LinkElement to={"/droprates"} text={"Drop Rates"}/>
-            {' | '}
-            <LinkElement to={"/contributors"} text={"Contributors"}/>
-            {' | '}
-            <LinkElement to={"/memes"} text={"Memes (OC)"}/>
-            {' | '}
-            <LinkElement to={"/api/users"} text={"Users API"}/>
-        </nav>
-    </header>)
+  return (
+    <>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="/">Sleeping Forest</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Docs</Nav.Link>
+            <NavDropdown title="Other Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Genshin Toolkit</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Form inline>
+            <FormControl type="text" placeholder="Search Documentation" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
+    </>
+  )
+}
+
+export function OldComponent() {
+  return (
+    <header>
+      <nav>
+        <LinkElement to={'/'} text={'Home'} />
+        {' | '}
+        <LinkElement to={'/about'} text={'About'} />
+        {' | '}
+        <LinkElement to={'/users'} text={'Users List'} />
+        {' | '}
+        <LinkElement to={'/droprates'} text={'Drop Rates'} />
+        {' | '}NavDropdown
+        <LinkElement to={'/contributors'} text={'Contributors'} />
+        {' | '}
+        <LinkElement to={'/memes'} text={'Memes (OC)'} />
+        {' | '}
+        <LinkElement to={'/api/users'} text={'Users API'} />
+      </nav>
+    </header>
+  )
 }

@@ -3,7 +3,8 @@ import Layout from '../components/Layout'
 import {useMouseWheel} from 'react-use'
 import {useEffect, useState} from "react";
 import dynamic from "next/dynamic"
-
+import Jumbotron from "react-bootstrap/Jumbotron"
+import Button from "react-bootstrap/Button"
 
 interface IWasm_Basic {
     add_one(num: number): number
@@ -37,6 +38,16 @@ function IndexPage() {
 
     return (
         <Layout title="Home | Next.js + TypeScript Example">
+            <Jumbotron>
+        <h1>Hello, world!</h1>
+        <p>
+            This is a simple hero unit, a simple jumbotron-style component for calling
+            extra attention to featured content or information.
+        </p>
+        <p>
+            <Button variant="primary">Learn more</Button>
+        </p>
+        </Jumbotron>
             <h1>Welcome to Genshin Toolkit 👋</h1>
             <p>
                 <Link href="/about">
