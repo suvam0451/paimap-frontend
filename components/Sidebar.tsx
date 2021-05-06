@@ -29,7 +29,7 @@ export const SidebarData = [
   {
     title: 'Documentaion',
     icon: <FontAwesomeIcon icon={faBook} />,
-    link: '/map',
+    link: '/docs',
   },
   {
     title: 'Private Services',

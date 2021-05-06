@@ -8,15 +8,6 @@ seriesIndex: 1
 draft: false
 ---
 
-import {
-	Footer,
-	Alert,
-} from "../../../../src/components/Decorations";
-
-<Alert
-	head="Warning about ninjas !!!"
-	body="It might not work out the way you wnat it to but don't worry..."/>
-
 Snippets are the bread and butter of any editor extension. The snippets shipped with this extension all start with `u` _(to avoid conflicts)_.
 This is except a few macros like loops and switch statements which go along with any extension.
 

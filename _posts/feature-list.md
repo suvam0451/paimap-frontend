@@ -8,14 +8,13 @@ seriesIndex: 2
 draft: false
 ---
 
-The following features are available for this extension.
+In this post, we'll cover the **overall feature list** implemented and planned for the extension. First, we'll cover the highlights from where you are click links and explore at your convenience.
 
-#### Snippets
+#### 1. Snippets
 
----
+Snippets automate everyday-use declarations like uprops in the header files upto traces/sweeps, objectfinder, assetregistry etc. As we continue to add more snippets, specialized modules like AI and animations will be added and documented.
 
-Snippet files which cover most of your basic programming auto-completion needs with Unreal Engine 4.
-The following self-indicative namespaces are available.
+Using the following links, you can view the lists of snippets categorized into namespaces (subject to expansion in future)
 
 1.  **uprop** : Adding properties in header
 2.  **uinit** : initializing components/props
