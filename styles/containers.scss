@@ -8,6 +8,17 @@
   }
 }
 
+.root-container {
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+.main-container {
+  // margin-left: 15rem;
+  width: auto;
+  height: 100vh;
+}
+
 .bgWrap {
   // position: fixed;
   height: 100px;
@@ -22,6 +33,127 @@
     margin: 2rem 0.5rem 1rem 0.5rem;
   }
   > .content {
-
   }
+}
+
+.sidebar {
+  z-index: 99;
+  height: 100vh;
+  width: 50px;
+  // position: fixed;
+  background-color: #fafafa;
+  transition: width 200ms ease;
+
+  // Items in navbar
+  .sidebar-row {
+    height: 45px;
+    width: 100%;
+
+    > .link-text {
+      display: none;
+    }
+  }
+
+  &.expanded {
+    width: 15rem;
+
+    .sidebar-list {
+      align-items: flex-start;
+    }
+
+    // Items in navbar
+    .sidebar-row {
+      width: 100%;
+
+      > .link-text {
+        display: grid;
+        align-content: center;
+      }
+    }
+  }
+}
+
+.sidebar-list {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // A single row in a
+  > .sidebar-row {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: auto;
+    &.expanded {
+      grid-template-columns: 50px auto;
+    }
+
+    > .sidebar-item-icon {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      width: 100%;
+
+      &.animate-hflip {
+        // Animation
+        transform: rotate(0deg);
+        transition: transform 200ms;
+
+        &.expanded {
+          transform: rotate(-180deg);
+        }
+      }
+
+      &.expanded {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .link-text {
+      color: #777777;
+    }
+
+    // Currently active idebar item
+    &#active {
+      background-color: #e7e7e7;
+      .link-text {
+        color: #525252;
+        font-weight: 700;
+      }
+    }
+    > a.active {
+      background-color: white;
+    }
+
+    &:last-child {
+      margin-top: auto;
+    }
+  }
+}
+
+.sidebar-row {
+  svg {
+    fill: #666666;
+  }
+  &:hover {
+    background-color: #E5E5E5;
+  }
+  &#active {
+    background-color: #EDEDED;
+    &:hover {
+      background-color: #eeeeee;
+    }
+    svg {
+      fill: #303030;
+    }
+  }
+}
+
+.page-content {
+  padding: 0 1rem;
 }

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
+import Sidebar from "../components/Sidebar"
 
 interface IWasm_Basic {
   add_one(num: number): number
