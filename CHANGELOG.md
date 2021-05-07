@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/suvam0451/paimap-frontend/compare/v0.0.2...v0.0.3) (2021-05-07)
+
+
+### Bug Fixes
+
+* enhance routes pointed by sidebar ([4c00d5f](https://github.com/suvam0451/paimap-frontend/commit/4c00d5f9f61c49d49c5de3fa80a03c88b081e134))
+* yarn build blocker bugs ([1462c08](https://github.com/suvam0451/paimap-frontend/commit/1462c08ce7109c09fab24bd2e8021587bc7b1ab5))
+
 ### [0.0.2](https://github.com/suvam0451/paimap-frontend/compare/v0.0.1...v0.0.2) (2021-05-06)
 
 
