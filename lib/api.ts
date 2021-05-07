@@ -8,20 +8,34 @@ export function getPostSlugs() {
     return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug: string, fields: any[] = []) {
+type MarkdownData = {
+    slug: string,
+    content: any,
+    title?: string,
+    author?: string
+  }
+
+/**
+ * 
+ * @param slug filename prefix for the markdown file
+ * @param fields frontmatter to extract (also slug, content)
+ * @returns 
+ */
+export function getPostBySlug(slug: string, fields: string[] = []) {
     const realSlug = slug.replace(/\.md$/, '')
     const fullPath = join(postsDirectory, `${realSlug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data, content } = matter(fileContents)
+    const { data, content } = matter(fileContents) // data -> frontmatter
 
-    const items = {}
+    let items : MarkdownData = {slug: realSlug, content: content}
 
     // Ensure only the minimal needed data is exposed
     fields.forEach((field) => {
-        if (field === 'slug')
-            items[field] = realSlug
-        if (field === 'content')
-            items[field] = content
+        // Send back slug and content by default
+        // if (field === 'slug')
+        //     items[field] = realSlug
+        // if (field === 'content')
+        //     items[field] = content
         if (data[field])
             items[field] = data[field]
     })
@@ -29,7 +43,8 @@ export function getPostBySlug(slug: string, fields: any[] = []) {
     return items
 }
 
-export function getAllPosts(fields = []) {
+/** Method to get all posts after custom sorting */
+export function getAllPosts(fields: string[] = []) {
     const slugs = getPostSlugs()
     const posts = slugs
         .map((slug) => getPostBySlug(slug, fields))
