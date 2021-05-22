@@ -1,5 +1,6 @@
 import { useMemo } from "react"
 import { createStore, applyMiddleware } from "redux"
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 let store
 
@@ -8,23 +9,54 @@ type IState = {
     light: boolean
     count: number
 }
+
 const initialState: IState = {
     lastUpdate: 0,
     light: false,
     count: 0,
 }
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
+type IReduxAction = {
+    type: string
+    payload?: any
+    lastUpdate: number
+    light: boolean
+    count: number
+}
 
+const reducer = (state: IState = initialState, action: IReduxAction): IState => {
+    switch (action.type) {
+        case 'TICK':
+            return {
+                ...state,
+                lastUpdate: action.lastUpdate,
+                light: !!action.light,
+            }
+        case 'INCREMENT':
+            return {
+                ...state,
+                count: state.count + 1,
+            }
+        case 'DECREMENT':
+            return {
+                ...state,
+                count: state.count - 1,
+            }
+        case 'RESET':
+            return {
+                ...state,
+                count: initialState.count,
+            }
+        default:
+            return state
     }
 }
 
-function initStore(preloadState = initialState) {
+function initStore(preloadedState = initialState) {
     return createStore(
         reducer,
-        preloadState,
-        // enhancers
+        preloadedState,
+        composeWithDevTools(applyMiddleware())
     )
 }
 
@@ -50,7 +82,4 @@ export const initializeStore = (preloadedState) => {
     return _store
 }
 
-export const useStore = (initialState) => {
-    const store = useMemo(() => initializeStore(initialState), [initialState])
-    return store
-}
+export const useStore = (initState) => useMemo(() => initializeStore(initState), [initState])
