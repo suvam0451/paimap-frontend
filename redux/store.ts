@@ -1,5 +1,7 @@
 import { useMemo } from "react"
 import { createStore, applyMiddleware } from "redux"
+import produce, { Draft } from "immer"
+import { useImmerReducer } from "use-immer"
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 let store
@@ -24,33 +26,34 @@ type IReduxAction = {
     count: number
 }
 
-const reducer = (state: IState = initialState, action: IReduxAction): IState => {
-    switch (action.type) {
-        case 'TICK':
-            return {
-                ...state,
-                lastUpdate: action.lastUpdate,
-                light: !!action.light,
-            }
-        case 'INCREMENT':
-            return {
-                ...state,
-                count: state.count + 1,
-            }
-        case 'DECREMENT':
-            return {
-                ...state,
-                count: state.count - 1,
-            }
-        case 'RESET':
-            return {
-                ...state,
-                count: initialState.count,
-            }
-        default:
-            return state
+const reducer = (state: IState = initialState, action: IReduxAction): IState =>
+    produce(state, (draft: Draft<IState>) => {
+        const { light, lastUpdate } = action
+        switch (action.type) {
+            case 'TICK':
+                draft.lastUpdate = lastUpdate
+                draft.light = !!action.light
+                return
+            case 'INCREMENT':
+                return {
+                    ...state,
+                    count: state.count + 1,
+                }
+            case 'DECREMENT':
+                return {
+                    ...state,
+                    count: state.count - 1,
+                }
+            case 'RESET':
+                return {
+                    ...state,
+                    count: initialState.count,
+                }
+            default:
+                return state
+        }
     }
-}
+    )
 
 function initStore(preloadedState = initialState) {
     return createStore(
