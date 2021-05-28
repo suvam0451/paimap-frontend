@@ -4,6 +4,8 @@ import produce, { Draft } from "immer"
 import { useImmerReducer } from "use-immer"
 import { composeWithDevTools } from 'redux-devtools-extension'
 
+import rootReducer from "./reducer"
+
 let store
 
 type IState = {
@@ -18,42 +20,42 @@ const initialState: IState = {
     count: 0,
 }
 
+enum IFrontendAction {
+    ADD_ITEM,
+    REMOVE_ITEM,
+    SORT_ITEMS
+}
+
 type IReduxAction = {
-    type: string
+    type: IFrontendAction
     payload?: any
     lastUpdate: number
     light: boolean
     count: number
 }
 
-const reducer = (state: IState = initialState, action: IReduxAction): IState =>
-    produce(state, (draft: Draft<IState>) => {
-        const { light, lastUpdate } = action
-        switch (action.type) {
-            case 'TICK':
-                draft.lastUpdate = lastUpdate
-                draft.light = !!action.light
-                return
-            case 'INCREMENT':
-                return {
-                    ...state,
-                    count: state.count + 1,
-                }
-            case 'DECREMENT':
-                return {
-                    ...state,
-                    count: state.count - 1,
-                }
-            case 'RESET':
-                return {
-                    ...state,
-                    count: initialState.count,
-                }
-            default:
-                return state
-        }
+const frontendReducer = produce((draft: IState, action: IReduxAction) => {
+    const { type, payload, light, lastUpdate } = action
+    switch (type) {
+        case IFrontendAction.ADD_ITEM:
+            draft.lastUpdate = lastUpdate
+            draft.light = !!light
+            break
+        case 'INCREMENT':
+            draft.count += 1
+            break;
+        case 'DECREMENT':
+            draft.count -= 1
+            break
+        case 'RESET':
+            draft.count = 0
+            break
+        default:
+            break
     }
-    )
+}, initialState)
+
+const [data, dataDispatch] = useImmerReducer(reducer, initialState);
 
 function initStore(preloadedState = initialState) {
     return createStore(
